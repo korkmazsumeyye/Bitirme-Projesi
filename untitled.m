@@ -68,7 +68,7 @@ function varargout = untitled_OutputFcn(hObject, eventdata, handles)
 % hObject    handle to figure
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-msgbox('Puzzle oyununa hoþgeldiniz.Baþla butonuna týkla ve karþýna çýkan pencereden resmini seç.Mause ile daðýtýk resmin üstüne týkla ve baþla.BOL ÞANSLAR :) ','Oyun Kuralý','help','modal');
+msgbox('Puzzle oyununa hoÅŸgeldiniz.BaÅŸla butonuna tÄ±kla ve karÅŸÄ±na Ã§Ä±kan pencereden resmini seÃ§.Mause ile daÄŸÄ±tÄ±k resmin Ã¼stÃ¼ne tÄ±kla ve baÅŸla.BOL ÅžANSLAR :) ','Oyun KuralÄ±','help','modal');
 set(handles.axes1,'Visible','off')
 set(handles.axes2,'Visible','off')
 set(handles.axes3,'Visible','off')
@@ -199,7 +199,7 @@ switch v
         set(h(ind),'box','on','xtick',[],'ytick',[])
         clear ind
     otherwise
-        msgbox('Geçersiz Karakter','DÝKKAT...!!!','Error','modal')
+        msgbox('GeÃ§ersiz Karakter','DÄ°KKAT...!!!','Error','modal')
         return
 end
 
@@ -214,7 +214,7 @@ global im3
 axes(handles.axes10)
 image(im3{1,9})
 set(handles.axes10,'box','on','xtick',[],'ytick',[])
-%msgbox('Tebrikler Oyunu Tamamladýnýz . ','Oyun Bitti','warn','modal')
+msgbox('Tebrikler Oyunu TamamladÄ±nÄ±z . ','Oyun Bitti','help','modal')
 
 % --- Executes on button press in pushbutton4.
 function pushbutton4_Callback(hObject, eventdata, handles)
@@ -235,7 +235,7 @@ cla(handles.axes10)
 global h im1 im3
 
 str = {'bisiklet.jpg';'winniepooh.jpg';'kelebek.jpg';'minions.jpg';'manzara.jpg'};
-[m,v] = listdlg('PromptString','Resmini Seç...:','listsize',[130 70],'selectionmode','single','name','SELECT','liststring',str);
+[m,v] = listdlg('PromptString','Resmini SeÃ§...:','listsize',[130 70],'selectionmode','single','name','SELECT','liststring',str);
 if isempty(m)
     return
 end
@@ -252,7 +252,7 @@ axes(handles.axes1)
 image(im1)
 set(handles.axes1,'box','on','xtick',[],'ytick',[])
 hold on
-text(50,75,'Ok Tuþlarýný Kullan : ','FontSize',14,'Color','y','FontWeight','Bold');
+text(50,75,'Ok TuÅŸlarÄ±nÄ± Kullan : ','FontSize',14,'Color','y','FontWeight','Bold');
 text(180,200,'\uparrow','FontSize',20,'Color','y','FontWeight','Bold'); 
 text(43,300,'\leftarrow   \downarrow   \rightarrow','FontSize',20,'Color','y','FontWeight','Bold'); 
 hold off
@@ -308,7 +308,7 @@ h = [h2 h3 h4 h5 h6 h7 h8 h9 h10];
 global h im1 im3
 
 str = {'bisiklet.jpg';'winniepooh.jpg';'kelebek.jpg';'minions.jpg';'manzara.jpg'};
-[m,v] = listdlg('PromptString','Resmini Seç...:','listsize',[130 70],'selectionmode','single','name','SELECT','liststring',str);
+[m,v] = listdlg('PromptString','Resmini SeÃ§...:','listsize',[130 70],'selectionmode','single','name','SELECT','liststring',str);
 if isempty(m)
     return
 end
@@ -325,7 +325,7 @@ axes(handles.axes1)
 image(im1)
 set(handles.axes1,'box','on','xtick',[],'ytick',[])
 hold on
-text(50,75,'Ok Tuþlarýný Kullan : ','FontSize',14,'Color','y','FontWeight','Bold');
+text(50,75,'Ok TuÅŸlarÄ±nÄ± Kullan : ','FontSize',14,'Color','y','FontWeight','Bold');
 text(180,200,'\uparrow','FontSize',20,'Color','y','FontWeight','Bold'); 
 text(43,300,'\leftarrow   \downarrow   \rightarrow','FontSize',20,'Color','y','FontWeight','Bold'); 
 hold off
